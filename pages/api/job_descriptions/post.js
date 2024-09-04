@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     console.log("body", req.body)
-    const api_url = process.env.NEXT_PUBLIC_API_URL;
+    const api_url = "https://2x5cqoqml7.execute-api.us-east-1.amazonaws.com/dev/"
     try {
         if (req.method === 'POST') {
             const response = await fetch(`${api_url}`, {
